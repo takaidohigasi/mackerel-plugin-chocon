@@ -1,0 +1,6 @@
+.idea/
+*~
+
+mackerel-plugin-chocon*
+
+vendor/

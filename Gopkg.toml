@@ -1,0 +1,11 @@
+[[constraint]]
+  branch = "master"
+  name = "github.com/mackerelio/go-mackerel-plugin"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/mercari/go-httpstats"
+
+[prune]
+  go-tests = true
+  unused-packages = true
