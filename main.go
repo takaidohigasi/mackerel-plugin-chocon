@@ -56,8 +56,12 @@ var (
 		},
 	}
 	percents  = []int{90, 95, 99}
+
+	// this status do not cover all the HTTP status
+	// https://golang.org/src/net/http/status.go
+	// https://github.com/mercari/go-httpstats/blob/master/stats.go#L30-L39
 	status4xx = []int{
-		http.StatusNotFound,
+		http.StatusBadRequest,
 		http.StatusUnauthorized,
 		http.StatusForbidden,
 		http.StatusNotFound,
@@ -68,6 +72,7 @@ var (
 		http.StatusBadGateway,
 		http.StatusServiceUnavailable,
 		http.StatusGatewayTimeout,
+		http.StatusNotImplemented,
 	}
 )
 
